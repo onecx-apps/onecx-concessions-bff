@@ -1,6 +1,0 @@
-variables:
-  NATIVE: "true"
-include:
-  - project: '1000kit/infra/ci/quarkus'
-    ref: 'v2'
-    file: 'ci.yml'
