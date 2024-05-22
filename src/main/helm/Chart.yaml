@@ -1,0 +1,17 @@
+apiVersion: v2
+name: ${project.artifactId}
+version: ${project.version}
+appVersion: ${project.version}
+description: Support tool bff
+keywords:
+  - support tool bff
+sources:
+  - https://gitlab.com/1000kit/apps/ops-support/onecx-concessions-bff
+maintainers:
+  - name: Tkit Developer
+    email: tkit_dev@1000kit.org
+dependencies:
+  - name: helm-quarkus-app
+    alias: app
+    version: ^0
+    repository: oci://ghcr.io/onecx/charts
