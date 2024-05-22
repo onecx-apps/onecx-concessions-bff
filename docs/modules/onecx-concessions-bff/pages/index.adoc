@@ -1,0 +1,8 @@
+include::onecx-concessions-bff-attributes.adoc[opts=optional]
+
+== onecx-concessions-bff
+
+include::docs.adoc[opts=optional]
+
+
+include::onecx-concessions-bff-docs.adoc[opts=optional]
