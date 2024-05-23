@@ -11,7 +11,3 @@ jobs:
   build:
     uses: onecx-apps/ci-quarkus/.github/workflows/build.yml@v1
     secrets: inherit
-    with:
-      native: true
-      helmEventTargetRepository: onecx-apps/onecx-concessions
-
