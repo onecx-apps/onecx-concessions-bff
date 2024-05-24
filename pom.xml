@@ -179,7 +179,7 @@
                         </goals>
                         <configuration>
                             <uri>
-                                https://raw.githubusercontent.com/onecx-apps/onecx-concessions-svc/develop/src/main/openapi/onecx-concessions-internal-openapi.yaml
+                                https://raw.githubusercontent.com/onecx-apps/onecx-concessions-svc/main/src/main/openapi/onecx-concessions-internal-openapi.yaml
                             </uri>
                             <outputDirectory>target/tmp/openapi</outputDirectory>
                             <outputFileName>onecx-concessions-svc.yaml</outputFileName>

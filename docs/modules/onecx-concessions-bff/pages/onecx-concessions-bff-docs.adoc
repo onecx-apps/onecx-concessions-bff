@@ -15,12 +15,12 @@ quarkus.http.auth.permission.default.policy=authenticated
 org.eclipse.microprofile.rest.client.propagateHeaders=apm-principal-token
 %prod.quarkus.rest-client.onecx_concessions_internal.url=http://onecx-concessions-svc:8080
 %prod.quarkus.oidc-client.client-id=${quarkus.application.name}
-quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_internal_yaml.config-key=onecx_concessions_internal
-quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_internal_yaml.base-package=gen.org.tkit.onecx.concessions.tool.client
-quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_internal_yaml.return-response=true
-quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_internal_yaml.additional-api-type-annotations=@org.eclipse.microprofile.rest.client.annotation.RegisterClientHeaders;
-quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_internal_yaml.additional-model-type-annotations=@io.quarkus.runtime.annotations.RegisterForReflection;
-quarkus.openapi-generator.codegen.input-base-dir=src/main/openapi/client
+quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_yaml.config-key=onecx_concessions_internal
+quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_yaml.base-package=gen.org.tkit.onecx.concessions.tool.client
+quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_yaml.return-response=true
+quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_yaml.additional-api-type-annotations=@org.eclipse.microprofile.rest.client.annotation.RegisterClientHeaders;
+quarkus.openapi-generator.codegen.spec.onecx_concessions_svc_yaml.additional-model-type-annotations=@io.quarkus.runtime.annotations.RegisterForReflection;
+quarkus.openapi-generator.codegen.input-base-dir=target/tmp/openapi
 ----
 ====
 
@@ -45,6 +45,11 @@ Default values
 app:
   image:
     repository: "1000kit/${project.artifactId}"
+    tag: ${project.version}
+
+----
+
+t.artifactId}"
     tag: ${project.version}
 
 ----
