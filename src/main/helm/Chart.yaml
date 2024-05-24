@@ -1,12 +1,12 @@
 apiVersion: v2
-name: ${project.artifactId}
-version: ${project.version}
-appVersion: ${project.version}
-description: Support tool bff
+name: onecx-concessions-bff
+version: 0.0.0
+appVersion: 0.0.0
+description: Concessions bff
 keywords:
-  - support tool bff
+  - concessions bff
 sources:
-  - https://gitlab.com/1000kit/apps/ops-support/onecx-concessions-bff
+  - https://github.com/onecx-apps/onecx-concessions-bff
 maintainers:
   - name: Tkit Developer
     email: tkit_dev@1000kit.org
