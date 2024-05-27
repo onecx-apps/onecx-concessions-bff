@@ -9,7 +9,7 @@ tags:
   - name: travelConcessionInternal
   - name: travelOfferingsInternal
 paths:
-  /internal/travelofferings:
+  /travelofferings:
     post:
       tags:
         - travelOfferingsInternal
@@ -40,7 +40,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ProblemDetailResponse"
-  /internal/travelofferings/{id}:
+  /travelofferings/{id}:
     get:
       tags:
         - travelOfferingsInternal
@@ -107,7 +107,7 @@ paths:
       responses:
         204:
           description: Travel offering deleted
-  /internal/travelofferings/all:
+  /travelofferings/all:
     get:
       tags:
         - travelOfferingsInternal
@@ -124,7 +124,7 @@ paths:
                   $ref: "#/components/schemas/TravelOffering"
         "404":
           description: Not found
-  /internal/travelofferings/search:
+  /travelofferings/search:
     post:
       tags:
         - travelOfferingsInternal
@@ -143,7 +143,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/TravelOfferingPageResult"
-  /internal/travelconcessions:
+  /travelconcessions:
     post:
       tags:
         - travelConcessionsInternal
@@ -174,7 +174,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ProblemDetailResponse"
-  /internal/travelconcessions/{id}:
+  /travelconcessions/{id}:
     get:
       tags:
         - travelConcessionsInternal
@@ -241,7 +241,7 @@ paths:
       responses:
         204:
           description: Travel concession deleted
-  /internal/travelconcessions/search:
+  /travelconcessions/search:
     post:
       tags:
         - travelConcessionsInternal
@@ -260,7 +260,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/TravelConcessionPageResult"
-  /internal/searchConfig/{configId}:
+  /searchConfig/{configId}:
     put:
       x-onecx:
         permissions:
@@ -336,7 +336,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ProblemDetailResponse"
-  /internal/searchConfig/infos/{page}:
+  /searchConfig/infos/{page}:
     get:
       x-onecx:
         permissions:
@@ -372,7 +372,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ProblemDetailResponse"
-  /internal/searchConfig/{id}:
+  /searchConfig/{id}:
     get:
       tags:
         - SearchConfig
@@ -407,7 +407,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/ProblemDetailResponse"
 
-  /internal/searchConfig/:
+  /searchConfig/:
     post:
       x-onecx:
         permissions:
